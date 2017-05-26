@@ -4,12 +4,11 @@
   "description": "Nodejs Project setup using npm, Angular setup using bower to create setup project",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start":"node server.js"
   },
   "repository": {
   "type": "git",
-  "url": "https://github.com/vydyas/MEAN-Blog-Heroku.git"
+  "url": "https://github.com/vydyas/MEAN-Blog-Heroku"
   },
   "author": "",
   "license": "ISC",
