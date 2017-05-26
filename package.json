@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/vydyas/NodeJs-Mongo-Angular-Blog.git"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -13,5 +17,8 @@
     "express": "^4.14.1",
     "express-session": "^1.15.1",
     "mongoose": "^4.8.5"
+  },
+  "engines": {
+    "node": "v6.9.5"
   }
 }

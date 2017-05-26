@@ -13,9 +13,12 @@ var authController=require('./server/controller/authController');
 var articleController=require('./server/controller/articleController');
 var commentController=require('./server/controller/commentController');
 
-
+var options = {
+    server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } },
+    replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } }
+};
 //database configuration
-mongoose.connect(database.localURL);
+mongoose.connect(database.localURL, options);
 
 app.use(express.static(path.join(__dirname,'public')));
 app.use('/bower_components', express.static(__dirname + '/bower_components'));
@@ -42,5 +45,3 @@ app.get('/api/view/:id',articleController.deleteArticle1);
 
 app.post('/api/comments/:id',commentController.new);
 app.get('/api/comments/:id',commentController.getComments);
-
-
