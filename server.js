@@ -6,7 +6,7 @@ const router=express.Router();
 const path=require('path');
 const database=require("./config/db");
 const session = require('express-session');
-const port=process.env.port || 9999;
+const port=process.env.port || 8080;
 
 //controller
 var authController=require('./server/controller/authController');
